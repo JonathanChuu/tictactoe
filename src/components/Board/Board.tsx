@@ -64,8 +64,8 @@ function Board() {
 
     return (
         <div>
-            {!winner && <p>Sua vez {player}</p>}
-            {winner && winner !== "Draw" && <p>{winner} ganhou. Uhull Parabéns!!! 🥳</p>}
+            {!winner && <p>Sua vez <span>{player}</span></p>}
+            {winner && winner !== "Draw" && <p><span>{winner}</span> ganhou. Parabéns!!! 🥳</p>}
             {winner && winner === "Draw" && (
                 <p>Empate!!!</p>
             )}
